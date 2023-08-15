@@ -1,0 +1,757 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --cafe--:#3E3E40;
+    --red--:#D94A56;
+    --branco--:#ffff;
+    --meioBranco--:#F2F2F2;
+    --acizentado--:#f4f4f4;
+    --cinza--:#9c9a9af1;
+    --cinzaFort--:#919090;
+    --Preto--: #272727;
+    /* --Dourado--:#CBB26A;
+    --Amarelado--:#E3D16B;
+    --alaranjado--:#E3B96b;
+    --laranja--:#D9A366;
+    --icone--:#cbb36ada; */
+
+}
+/* div que engloba tudo  */
+.whap{
+    margin: 0px 55px;
+}
+
+body{
+    background-color: var(--meioBranco--);
+}
+
+
+/* config do header */
+
+header{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--Preto--);
+    border: solid 3px var(--Preto--);
+}
+
+.container-logo{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo{
+    width: 18rem;
+    height: 12rem;
+}
+.btns{
+    display: flex;
+    align-items: center;
+}
+
+.bt{
+    width: 10rem;
+    height: 3rem;
+    margin: 15px;
+    cursor: pointer;
+    border: solid var(--red--);
+    border-radius: 20px;
+    background-color: var(--Preto--);
+    color: var(--red--);
+    font-size: 15px;  
+
+}
+
+.bt:hover{
+    color: var(--branco--);
+    border: solid 3px var(--cinza--) ;
+}
+
+/* config do aboute / informaçoes  */
+
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco--);
+    box-shadow: 5px 0 5px -2px rgba(0, 0, 0, 0.3), -5px 0 5px -2px rgba(0, 0, 0, 0.3);
+}
+/* containe da imagem */
+.About-img{
+    width: 40rem;
+    height: 36rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* comfig imagem  */
+.imagem-abolt{
+    margin-left: 15px;
+    width: 30rem;
+    height: 24rem;
+}
+
+.About-h3{
+    margin-left:20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Preto--);
+}
+
+.About-p{
+    margin-left: 35px;
+    font-size: 20px;
+    color: var(--cinzaFort--);
+    margin-bottom: 10px;
+}
+
+.info-container{
+    margin: 0  15px 0 15px;
+}
+ /* area dos icones  */
+.container-icons{
+    height: 84%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:15px;    
+}
+
+.left-icons{
+    width: 100%;
+    height: auto;
+}
+
+.right-icons{
+    width: 100%;
+    height: auto;
+}
+
+.ico{
+    font-size: 30px;
+    margin-left: 10px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+i{
+ color: var(--red--);
+}
+/* #e24343bd */
+/* #e9f895 */
+
+.left-icons h3, .right-icons h3{
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px 0 10px 50px;
+   color: var(--Preto----);
+   cursor: pointer;
+    
+}
+
+.left-icons p, .right-icons p{
+   width: 20vw;
+   height: auto;
+   margin-top: 10px;
+   margin-left: 60px;
+   font-size: 18px;
+   color: var(--cinzaFort--);
+
+}
+/* config area das parcerias  */
+.container-parcerias{
+    background-color: var(--meioBranco--);
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 20vh;
+    box-shadow: 5px 0 5px -2px rgba(0, 0, 0, 0.3), -5px 0 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.const-parceria{
+    width: 100%;
+    margin-left:10px;
+    overflow: hidden;
+}
+/* parcerias muadndo de cor  */
+.const{
+    width: 65%;
+    height:60%;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s;
+    filter: grayscale(100%);
+}
+
+.const-parceria:hover .const{
+    filter: grayscale(0%);
+}
+ /* visao da empresa  */
+.vision{
+    height: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--branco--);
+    box-shadow: 5px 0 5px -2px rgba(0, 0, 0, 0.3), -5px 0 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.company{
+    width: 30%;
+    height: auto;
+    padding: 30px 0 30px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* quando o mouse passar sobre a div muda de cor company e cria sombra */
+.company:hover{
+    background-color: var(--acizentado--);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
+}
+
+
+
+.img-company{
+    width: 100%;
+    height:45%;
+    border-radius: 10px;
+}
+
+.container-company h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0 20px 0 ;
+    color: var(--Preto--);
+    
+}
+.company:hover h4{
+    color: var(--red--);
+}
+
+.container-company p{
+    font-size:20px;
+    color: var(--cinzaFort--);
+    word-wrap: break-word;
+    font-weight: 500;
+}
+.company:hover p{
+    color: var(--cafe--);
+}
+
+/* footer  */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+    background-color: var(--Preto--);
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.footer-logo{
+    border: solid 2px blue;
+}
+
+.footer-info{
+    width: 25%;
+}
+.footer-info h4{
+    font-size: 25px;
+    margin-bottom:20px;
+    color: white;
+}
+
+.footer-info p{
+    word-wrap: break-word;
+    color: var(--cinza--)
+}
+
+.footer-info i {
+    color: #D94A56;
+}
+
+
+
+li{
+    margin-bottom: 10px;
+}
+a{   
+    color: var(--cinza--);
+    font-size: 20px;
+    margin: 15px;
+}
+a:hover{
+    color: var(--red--);
+    text-decoration: underline;
+}
+
+.social-links{
+    display: flex;
+    
+}
+
+.social-links i{
+    font-size: 25px;
+    margin: 0 0 20px;
+    color: var(--branco--);
+}
+.social-links i:hover{
+    color: var(--red--);
+}
+
+@media (min-width:1700px) and (max-width:2530px) {
+   /* config header  */
+   header{    
+    height: 20rem;
+   }
+   .img-logo {
+    width: 32rem;
+    height: 22rem;
+    }
+    .bt {
+        width: 15rem;
+        height: 5rem;
+        font-size: 24px;
+    }
+
+   /* config abolt  */
+    .About {
+        height: 50rem;
+    }
+
+    .About-img {
+        width: 50rem;
+        height: 39rem
+    }
+
+    .imagem-abolt{
+        width: 49rem;
+    height: 39rem;
+    }
+
+    .About-h3 {
+        font-size: 35px;
+    }
+
+    .About-p{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .left-icons h3, .right-icons h3 {
+        font-size: 35px;
+    }
+
+    .left-icons p, .right-icons p{
+        font-size: 30px;
+    }
+    /* config section vision  */
+    .vision {
+        height: 52rem;
+    } 
+
+    .container-company h4{
+        font-size: 35px;
+    }
+
+    .container-company p{
+        font-size: 30px;
+    }
+    /* config footer  */
+
+    .footer-info h4 {
+        font-size: 40px;
+    }
+
+    a {
+        font-size: 32px;
+    }
+
+    .footer-info p{
+        font-size: 30px;
+    }
+
+    .social-links i {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width:1150px){
+    /* config header  */
+    .img-logo {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .bt {
+        width: 9rem;
+        height: 3rem;
+        font-size: 12px;
+        margin: 15px 5px 0 0;
+    }
+
+    /* config abolt  */
+
+    .About {
+        flex-direction: column;
+    }
+
+    .About-img {
+        width: 40rem;
+        height: auto;
+        margin: 25px 0 25px 0;
+    }
+    
+    .imagem-abolt {
+        width: 100%;
+        height: 70%;
+    }
+
+    .info-container {
+        width: 87%;
+        height: auto;
+        margin-left: 13%;
+        margin-bottom: 25px;
+    }
+
+    .About-h3 {
+        font-size: 23px;
+    
+    }
+
+    .About-p {
+        margin-bottom: 20px;
+    }
+
+    .left-icons p, .right-icons p {
+        width: 70%;
+        height: auto;
+        font-size: 15px;
+        
+    }
+
+    /* config section vision  */
+    .vision{
+        height: 30rem;
+    }
+    .img-company {
+        width: 90%;
+        height: 34%;
+    }
+
+    .container-company h4 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .container-company p {
+        font-size: 100%;
+    }
+    /* config footer  */
+
+    .footer-info h4 {
+      font-size: 20px;
+    }
+
+    a {
+      font-size: 17px;
+    }
+
+    .social-links i {
+     font-size: 22px;
+    
+    }
+}
+
+@media(max-width:860px){ 
+  /* config header  */
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .btns {
+        margin-bottom: 15px;
+    }
+
+    .whap {
+         margin: 0px 0px; 
+    }
+   
+    /* config container-main */
+
+    .imagem-abolt {
+        width: 82%;
+        height: 70%;
+    }
+
+    .info-container {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-bottom: 7%;
+    }
+
+    /* config parcerias  */
+    #parcerias{
+        width: 85%;
+    }
+
+    /* config vision */
+
+    .vision {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+    }
+
+    .company { 
+        width: 100%; 
+        height: auto; 
+        padding: 30px 0 30px 0; 
+        overflow: hidden; 
+        cursor: pointer;
+        display: flex;
+    }
+       
+    .img-company {
+        width: 40%;
+        height: 156%;
+        margin-left: 5px;
+    }
+
+    .container-company h4 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-left: 5%;
+    }
+
+    .container-company p {
+        width: 80%;
+        font-size: 85%;
+        margin-left: 7%;
+    }
+
+    /* config footer  */
+
+    .footer-info h4 {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+  
+}
+
+@media(max-width:646px){
+   
+   /* settings header  */
+   .bt {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 12px;
+    margin: 15px 5px 0 0;
+    }
+   
+    /* settings About  */
+    .About-img {
+        width: 34rem;
+    }
+    
+    /* settings footer  */
+    .row {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .footer-info {
+        margin-left: 10px;
+    }
+
+    .footer-info h4 {
+        font-size: 15px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    .footer-info p {
+        font-size: 13px;
+    }
+
+    .social-links i {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:540px){
+ /* settings header  */
+    .img-logo {
+    width: 12rem;
+    height: 7rem;
+    }
+
+    .bt {
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    /* settings About  */
+
+    .About-img {
+        width: 22rem;
+    }
+
+    .info-container {
+        width: 97%;
+        margin-left: 0%;
+    }
+
+    .left-icons h3, .right-icons h3 {
+        font-size: 17px;
+    }
+
+    .left-icons p, .right-icons p {
+        width: 70%;
+        height: auto;
+        font-size: 13px;
+    }
+
+    /* settings parcerias  */
+
+    .container-parcerias {
+        padding: 30px; 
+    }
+
+    .const-parceria {
+        margin-left: 5px;
+    }
+
+    #parcerias {
+        width: 95%;
+    }
+
+    /* settings vision  */
+
+    .company {
+        display: block;
+    }
+
+    .img-company {
+        width: 95%;
+        margin-left: 10px;
+        
+    }
+
+    .container-company h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 1%;
+    }
+
+    .container-company p {
+        width: 80%;
+        font-size: 85%;
+        margin-left: 3%;
+    }
+
+    /* settings footer  */
+    a {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:384px){
+    /* settings header  */
+    .bt {
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 10px;
+        margin: 0px;
+        border: solid 2px;
+    }
+
+    /* settings about  */
+
+    .About-img {
+        width: 20rem;
+    }
+
+    .About-h3 {
+        font-size: 20px;
+    }
+
+    .left-icons h3, .right-icons h3 {
+        font-size: 15px;
+    }
+
+    .left-icons p, .right-icons p {
+        width: 75%;
+        font-size: 13px;
+        margin-left: 30px;
+    }
+
+     /* settings parserias */
+
+     .container-parcerias {
+        padding: 12px;
+    }
+
+    /* settings footer */
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info {
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    .footer-info h4 {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    
+    a {
+        font-size: 15px;
+    }
+
+    .footer-info p {
+        font-size: 13px;
+        margin-left: 12px;
+        margin-bottom: 15px;
+    }
+
+    .social-links i {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+}
+
